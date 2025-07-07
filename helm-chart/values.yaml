@@ -1,0 +1,6 @@
+hostname: tenant1.hiteshshop.store
+certificateArn: arn:aws:acm:us-east-1:949449004010:certificate/da4f79ba-5ac7-4d1a-93ed-930ebd71a679
+replicaCount: 2
+image:
+  repository: nginx
+  tag: latest
