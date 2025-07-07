@@ -1,2 +1,8 @@
-#!/bin/bash
-helm upgrade --install tenant2 ../../modules/helm-chart -n tenant2 -f values.yaml
+TENANT_NAME=tenant2
+NAMESPACE=$TENANT_NAME
+
+kubectl create ns $NAMESPACE --dry-run=client -o yaml | kubectl apply -f -
+
+helm upgrade --install $TENANT_NAME ../modules/helm-chart \
+  -n $NAMESPACE \
+  -f values.yaml
