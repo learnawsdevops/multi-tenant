@@ -172,5 +172,6 @@ helm upgrade --install $TENANT ../../helm-chart   -f values.yaml   -n $NAMESPACE
 - Access to each tenant’s workloads is isolated via Kubernetes namespaces.
 
 ---
+## Architecture
 
-
+![alt text](multi-tenant-dedicated-arch.png)
