@@ -174,4 +174,4 @@ helm upgrade --install $TENANT ../../helm-chart   -f values.yaml   -n $NAMESPACE
 ---
 ## Architecture
 
-![alt text](multi-tenant-dedicated-arch.png)
+![alt text](multi-tenant-eks.jpg)
